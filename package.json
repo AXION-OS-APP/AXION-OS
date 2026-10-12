@@ -1,0 +1,21 @@
+{
+  "name": "axion-os",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AXION OS — institutional-grade quantum early-warning console with post-quantum key tools. Static frontend + Serverless API.",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "node server.js",
+    "logo": "node scripts/make-logo.js",
+    "test": "node scripts/selftest.js"
+  },
+  "devDependencies": {
+    "@noble/hashes": "1.4.0",
+    "@noble/post-quantum": "0.2.1",
+    "esbuild": "^0.25.0"
+  },
+  "license": "MIT"
+}

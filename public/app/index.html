@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AXION OS · Console</title>
+<meta name="description" content="AXION OS console: post-quantum key commitments, ML-DSA-44 signer, threat oracle, canary bounty ladder and guard contract builder.">
+<meta name="theme-color" content="#0a0b14">
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap">
+<link rel="stylesheet" href="/assets/axion.css">
+<link rel="stylesheet" href="/app/app.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="/" aria-label="AXION OS home"><img src="/brand/logo.svg" alt="" width="40" height="40"><b>AXION<i>·</i>OS</b></a>
+    <div class="sysstat">
+      <span id="st-lvl" class="pill c-lime">LVL 00 NOMINAL</span>
+      <span class="c-dim">BLK <b id="st-blk" class="num">—</b></span>
+      <span class="c-dim hide-sm">GAS <b id="st-gas" class="num">—</b></span>
+      <span id="st-clock" class="num c-cyan"></span>
+    </div>
+    <div class="cta"><a class="btn sm social-btn social-github" href="https://github.com/AXION-OS-APP/AXION-OS" target="_blank" rel="noopener noreferrer"><svg class="soc-ico" viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8a8.01 8.01 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg><span>GITHUB</span> <span class="arrow">↗</span></a><a class="btn sm" href="/">◀ Exit</a><button class="btn sm cy" id="wallet-btn" type="button">Connect wallet</button></div>
+  </div>
+</header>
+
+<div class="desk wrap">
+  <aside class="dock px" aria-label="Apps">
+    <div class="dock-title tag">Programs</div>
+    <nav id="dock"></nav>
+    <div class="dock-foot c-dim" id="dock-foot">store: …</div>
+  </aside>
+
+  <section class="window px hl" aria-live="polite">
+    <div class="titlebar">
+      <span class="tb-ico" id="win-ico"></span>
+      <span id="win-title">DASHBOARD.EXE</span>
+      <span class="tb-btns" aria-hidden="true"><i>_</i><i>□</i><i>×</i></span>
+    </div>
+    <div class="win-body" id="win"></div>
+  </section>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script type="module" src="/app/app.js"></script>
+</body>
+</html>

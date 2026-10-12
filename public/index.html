@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AXION OS · Institutional-Grade Quantum Early Warning</title>
+<meta name="description" content="AXION OS is an institutional-grade quantum security console that watches for attacks on elliptic-curve crypto, and ships post-quantum ML-DSA-44 key tools that run in your browser.">
+<meta name="theme-color" content="#0a0b14">
+<link rel="icon" href="/brand/favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="AXION OS · Quantum Early Warning">
+<meta property="og:description" content="Canary bounties, a live threat level, and post-quantum key tools. Every tool runs in your browser.">
+<meta property="og:image" content="/brand/social.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@axionos_">
+<meta name="twitter:creator" content="@axionos_">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Silkscreen:wght@400;700&family=VT323&display=swap">
+<link rel="stylesheet" href="/assets/axion.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="AXION OS home"><img src="/brand/logo.svg" alt="" width="40" height="40"><b>AXION<i>·</i>OS</b></a>
+    <nav aria-label="Sections">
+      <a href="#world">World map</a><a href="#apps">Apps</a><a href="#users">Users</a><a href="#stack">Stack</a><a href="#roadmap">Roadmap</a><a href="#faq">FAQ</a>
+    </nav>
+    <div class="cta">
+      <a class="btn sm social-btn social-github" href="https://github.com/AXION-OS-APP/AXION-OS" target="_blank" rel="noopener noreferrer"><svg class="soc-ico" viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8a8.01 8.01 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg><span>GITHUB</span> <span class="arrow">↗</span></a>
+      <a class="btn sm" href="/app#contracts">Docs</a>
+      <a class="btn sm cy" href="/app#board">Leaderboard</a>
+      <a class="btn sm pri" href="/app#dashboard">Boot OS ▶</a>
+    </div>
+  </div>
+</header>
+
+<div class="ticker" aria-hidden="true"><div class="track" id="ticker"></div></div>
+
+<main class="wrap" id="top">
+
+  <div class="hero">
+    <!-- LEFT -->
+    <div class="stack">
+      <div class="px card">
+        <h3>SYSTEM.INFO <small>AXN-01</small></h3>
+        <div class="kv">
+          <span>Kernel</span><span>AXN-01 · rev 1.0</span>
+          <span>PQ signature</span><span>ML-DSA-44</span>
+          <span>Standard</span><span>NIST FIPS 204</span>
+          <span>Commitment</span><span>keccak256</span>
+          <span>Canary rungs</span><span id="si-rungs">14 · 16→256 bit</span>
+          <span>Armed curves</span><span>4 · P-192→k1</span>
+          <span>Threat scale</span><span>0 → 4</span>
+          <span>Runtime</span><span class="c-lime">serverless · edge</span>
+        </div>
+      </div>
+      <div class="px card">
+        <h3>DRIVERS</h3>
+        <ul class="list">
+          <li>ARK.SYS · key commitment</li>
+          <li>SIGNER.SYS · lattice signatures</li>
+          <li>ORACLE.SYS · threat level feed</li>
+          <li>CANARY.SYS · ECDLP bounty ladder</li>
+          <li>GUARD.SYS · contract lock builder</li>
+          <li>BOARD.SYS · solver rankings</li>
+        </ul>
+      </div>
+      <div class="px card">
+        <h3>LEGEND</h3>
+        <div class="legend">
+          <span><i class="sq" style="background:var(--lime)"></i>Nominal · lvl 0</span>
+          <span><i class="sq" style="background:var(--amber)"></i>Watch / Elevated · lvl 1–2</span>
+          <span><i class="sq" style="background:var(--red)"></i>Critical / Breach · lvl 3–4</span>
+        </div>
+      </div>
+      <div class="px card" style="border-color:var(--amber)">
+        <h3 style="color:var(--amber)">⚠ NOTICE</h3>
+        <p style="margin:0;color:var(--dim);font-size:19px">AXION OS will never ask for your seed phrase or wallet private key. Post-quantum keys are born inside your browser tab; only a 32-byte hash ever leaves it.</p>
+      </div>
+    </div>
+
+    <!-- CENTER -->
+    <div class="px hl monitor">
+      <div class="screen">
+        <div>
+          <div class="tag">AXION core monitor</div>
+          <h1 style="margin-top:10px">Institutional-Grade <em>Quantum</em> Early Warning</h1>
+          <p class="lead">An operating console that watches elliptic-curve crypto for signs of a quantum break, and hands you post-quantum tools before you need them.</p>
+          <div class="tag" style="margin-top:18px">Threat level</div>
+          <div class="big num"><span id="lvl">00</span><small> / 04</small></div>
+          <div class="state ok" id="lvl-label">NOMINAL</div>
+          <div class="kv" style="margin-top:14px">
+            <span>Strongest broken</span><span id="strong">none yet</span>
+            <span>Armed rungs intact</span><span id="armed-intact">4 / 4</span>
+            <span>Ark registrations</span><span id="ark-n">0</span>
+          </div>
+        </div>
+        <div>
+          <div class="planet">
+            <canvas id="planet" aria-label="Rotating pixel planet"></canvas>
+            <span class="cap2" id="planet-state">● ONLINE</span>
+            <span class="cap">WORLD VIEW · AXN-01</span>
+          </div>
+          <div class="bootlog" id="bootlog" style="margin-top:14px" aria-live="polite"></div>
+        </div>
+      </div>
+
+      <div class="btns">
+        <a class="btn pri" href="/app#ark">Protect my keys ▶</a>
+        <a class="btn cy" href="/app#canary">Hunt canaries</a>
+        <a class="btn" href="#world">How it works</a>
+      </div>
+
+      <div>
+        <div class="tag" style="margin-bottom:10px">Defense quest</div>
+        <div class="quest">
+          <a href="/app#ark"><svg viewBox="0 0 12 12" shape-rendering="crispEdges"><path fill="#8dff4a" d="M3 5h6v6H3zM4 2h4v1H4zM3 3h1v2H3zM8 3h1v2H8z"/><path fill="#0a0b14" d="M5 7h2v2H5z"/></svg>Commit<b>ark</b></a>
+          <a href="/app#signer"><svg viewBox="0 0 12 12" shape-rendering="crispEdges"><path fill="#3dd9ff" d="M8 1h2v2H8zM7 3h2v2H7zM6 4h2v2H6zM5 5h2v2H5zM4 6h2v2H4zM3 7h2v2H3zM2 9h2v2H2z"/></svg>Sign<b>ml-dsa</b></a>
+          <a href="/app#guard"><svg viewBox="0 0 12 12" shape-rendering="crispEdges"><path fill="#ffc23d" d="M2 1h8v6H2zM3 7h6v2H3zM4 9h4v1H4zM5 10h2v1H5z"/><path fill="#0a0b14" d="M5 3h2v3H5z"/></svg>Guard<b>lock</b></a>
+          <a href="/app#canary"><svg viewBox="0 0 12 12" shape-rendering="crispEdges"><path fill="#ff4fd8" d="M4 1h4v1H4zM3 2h6v4H3zM2 6h8v3H2zM4 9h1v2H4zM7 9h1v2H7z"/><path fill="#0a0b14" d="M5 3h1v1H5z"/><path fill="#ffc23d" d="M9 4h2v1H9z"/></svg>Watch<b>canary</b></a>
+          <a href="/app#board"><svg viewBox="0 0 12 12" shape-rendering="crispEdges"><path fill="#e8ecff" d="M1 7h3v4H1zM5 3h3v8H5zM9 5h2v6H9z"/><path fill="#8dff4a" d="M6 1h1v1H6z"/></svg>Rank<b>board</b></a>
+        </div>
+      </div>
+
+      <div class="ca">
+        <div class="row"><span class="label" id="ca-label">$AXIOS · contract address</span><button class="btn sm" id="ca-copy" type="button">Copy</button></div>
+        <code id="ca-addr">TBA · launching soon</code>
+      </div>
+      <div class="social" id="social">
+        <a class="btn sm social-btn social-x" href="https://x.com/axionos_" target="_blank" rel="noopener noreferrer"><svg class="soc-ico" viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M9.333 6.927 14.542 1h-1.234L8.785 6.223 5.173 1H1l5.467 7.779L1 15h1.234l4.782-5.419L10.827 15H15l-5.667-8.073Zm-1.69 1.916-.553-.772-4.404-6.143h1.895l3.555 4.96.553.772 4.622 6.452h-1.895l-3.773-5.269Z"/></svg><span>X</span> <span class="arrow">↗</span></a>
+        <a class="btn sm social-btn social-github" href="https://github.com/AXION-OS-APP/AXION-OS" target="_blank" rel="noopener noreferrer"><svg class="soc-ico" viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8a8.01 8.01 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg><span>GITHUB</span> <span class="arrow">↗</span></a>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="stack">
+      <div class="px card">
+        <h3>MAINNET.FEED <small id="feed-age">…</small></h3>
+        <div class="kv">
+          <span>Block</span><span class="num c-lime" id="f-block">—</span>
+          <span>Gas</span><span class="num" id="f-gas">—</span>
+          <span>Base fee</span><span class="num" id="f-base">—</span>
+          <span>Block fill</span><span class="num" id="f-fill">—</span>
+          <span>Txs in block</span><span class="num" id="f-tx">—</span>
+        </div>
+      </div>
+      <div class="px card">
+        <h3>RUNG.LADDER <small>live</small></h3>
+        <div class="ladder" id="ladder"></div>
+      </div>
+      <div class="px card">
+        <h3>MEMORY <small>128 cells</small></h3>
+        <div class="reg" id="reg" aria-hidden="true"></div>
+      </div>
+      <div class="px card">
+        <h3>BSGS.TRACE</h3>
+        <div class="hex" id="hex" aria-hidden="true"></div>
+      </div>
+      <div class="px card">
+        <h3>INTEGRATE</h3>
+<pre class="code"><em>import</em> <b>"axion/AxionGuard.sol"</b>;
+
+<em>contract</em> Treasury <em>is</em> AxionGuard {
+  <em>constructor</em>(IAxionOracle o)
+    AxionGuard(o, 2) {}
+
+  <em>function</em> pay(<em>address</em> to)
+    external <b>quantumSafe</b> { … }
+}</pre>
+      </div>
+    </div>
+  </div>
+
+  <!-- WORLD BANNER -->
+  <div class="px world" aria-hidden="true">
+    <canvas id="world-canvas"></canvas>
+    <div class="over"><div><h2>AXION OS</h2><p>// a watchtower for the post-quantum era</p></div></div>
+  </div>
+
+  <div class="px manifesto">
+    <p><span>01 ›</span> Every transaction you sign publishes a public key.</p>
+    <p><span>02 ›</span> A big enough quantum computer can walk it back to the private key.</p>
+    <p><span>03 ›</span> Nobody will announce that day in advance.</p>
+    <p><span>04 ›</span> AXION OS listens for it, and flips your switches first.</p>
+  </div>
+
+  <!-- WORLD MAP -->
+  <section class="sec" id="world">
+    <div class="sec-head"><div><div class="tag">World map · how it works</div><h2>Five stages from signal to safety</h2><p>Real cryptographic bounties measure attacker capability. That measurement becomes one number. Everything else reacts to that number.</p></div></div>
+    <div class="path-line"></div>
+    <div class="grid g5">
+      <div class="px stage"><span class="lvl">1-1</span><b>Canary</b><p>Bounty keys on fourteen curves, from toy 16-bit up to secp256k1. Anyone can submit a solution; the server checks k·G = Q itself.</p></div>
+      <div class="px stage"><span class="lvl">1-2</span><b>Oracle</b><p>Each broken armed rung (192-bit and up) lifts the threat level by one step, from 0 to 4. Training rungs never move it.</p></div>
+      <div class="px stage"><span class="lvl">1-3</span><b>Guard</b><p>Contracts that inherit AxionGuard freeze chosen functions once the level crosses the threshold you picked.</p></div>
+      <div class="px stage"><span class="lvl">1-4</span><b>Ark</b><p>Commit the hash of an ML-DSA-44 public key now. Later, that key proves you are the owner, even if ECDSA is broken.</p></div>
+      <div class="px stage"><span class="lvl">1-5</span><b>Alerts</b><p>Subscribe once and get pinged the moment the level moves. Dashboards and bots can poll the public JSON API.</p></div>
+    </div>
+    <div class="moment"><b>THE AXION MOMENT</b><p>The first time an armed rung falls. It is stamped with a timestamp and every module switches to defense mode.</p></div>
+  </section>
+
+  <!-- APPS -->
+  <section class="sec" id="apps">
+    <div class="sec-head"><div><div class="tag">Apps · desktop</div><h2>Six programs, one OS</h2><p>Each app does real cryptography locally and ends with something useful: a key file, a signature, a contract, or a ready-to-send transaction.</p></div><a class="btn pri" href="/app#dashboard">Boot OS ▶</a></div>
+    <div class="grid g3">
+      <a class="px app-icon" href="/app#ark"><svg class="ico" viewBox="0 0 14 14" shape-rendering="crispEdges"><path fill="#151a33" d="M1 1h12v12H1z"/><path fill="#8dff4a" d="M4 6h6v6H4zM5 3h4v1H5zM4 4h1v2H4zM9 4h1v2H9z"/><path fill="#0a0b14" d="M6 8h2v2H6z"/></svg><span class="k">PROTECT</span><h3>ARK.EXE</h3><p>Forge an ML-DSA-44 keypair, download the recovery kit, and register its 32-byte commitment.</p><span class="go">OPEN ▶</span></a>
+      <a class="px app-icon" href="/app#signer"><svg class="ico" viewBox="0 0 14 14" shape-rendering="crispEdges"><path fill="#151a33" d="M1 1h12v12H1z"/><path fill="#3dd9ff" d="M9 2h2v2H9zM8 4h2v2H8zM7 5h2v2H7zM6 6h2v2H6zM5 7h2v2H5zM4 8h2v2H4zM3 10h2v2H3z"/></svg><span class="k">PROTECT</span><h3>SIGNER.EXE</h3><p>Sign any message with a lattice-based key and verify signatures, fully offline-capable.</p><span class="go">OPEN ▶</span></a>
+      <a class="px app-icon" href="/app#oracle"><svg class="ico" viewBox="0 0 14 14" shape-rendering="crispEdges"><path fill="#151a33" d="M1 1h12v12H1z"/><path fill="#ffc23d" d="M3 9h2v2H3zM6 6h2v5H6zM9 3h2v8H9z"/></svg><span class="k">MONITOR</span><h3>ORACLE.EXE</h3><p>Live threat level, what each step means, and an on-chain reader for deployed oracles.</p><span class="go">OPEN ▶</span></a>
+      <a class="px app-icon" href="/app#canary"><svg class="ico" viewBox="0 0 14 14" shape-rendering="crispEdges"><path fill="#151a33" d="M1 1h12v12H1z"/><path fill="#ff4fd8" d="M5 3h4v1H5zM4 4h6v3H4zM3 7h8v3H3zM5 10h1v2H5zM8 10h1v2H8z"/><path fill="#ffc23d" d="M10 5h2v1h-2z"/></svg><span class="k">MONITOR</span><h3>CANARY.EXE</h3><p>Browse every bounty curve and crack training rungs up to 40 bits with an in-browser BSGS solver.</p><span class="go">OPEN ▶</span></a>
+      <a class="px app-icon" href="/app#guard"><svg class="ico" viewBox="0 0 14 14" shape-rendering="crispEdges"><path fill="#151a33" d="M1 1h12v12H1z"/><path fill="#8dff4a" d="M3 2h8v6H3zM4 8h6v2H4zM5 10h4v1H5zM6 11h2v1H6z"/><path fill="#151a33" d="M6 4h2v3H6z"/></svg><span class="k">BUILD</span><h3>GUARD.EXE</h3><p>Generate a Solidity contract that inherits AxionGuard and locks only the functions you choose.</p><span class="go">OPEN ▶</span></a>
+      <a class="px app-icon" href="/app#contracts"><svg class="ico" viewBox="0 0 14 14" shape-rendering="crispEdges"><path fill="#151a33" d="M1 1h12v12H1z"/><path fill="#e8ecff" d="M3 3h6v1H3zM3 5h8v1H3zM3 7h5v1H3zM3 9h7v1H3z"/><path fill="#3dd9ff" d="M10 2h2v2h-2z"/></svg><span class="k">BUILD</span><h3>SOURCE.EXE</h3><p>Read the reference Solidity: canary ladder, oracle, guard, ark and an example vault.</p><span class="go">OPEN ▶</span></a>
+    </div>
+  </section>
+
+  <!-- USERS -->
+  <section class="sec" id="users">
+    <div class="sec-head"><div><div class="tag">Players</div><h2>Who boots AXION OS</h2><p>One wallet or a whole protocol: everyone gets a concrete action they can take today.</p></div></div>
+    <div class="grid g4">
+      <div class="px use"><b>Long-term holders</b><p>Old wallets that already signed transactions have exposed keys. Commit a PQ key for them now.</p></div>
+      <div class="px use"><b>DAO treasuries</b><p>Wrap payouts in AxionGuard so a cracked signer key can't empty the vault overnight.</p></div>
+      <div class="px use"><b>DeFi builders</b><p>Read the threat level like any price feed and pause risky paths automatically.</p></div>
+      <div class="px use"><b>Researchers</b><p>Benchmark discrete-log attacks on a public ladder and climb the leaderboard.</p></div>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="sec" id="stack">
+    <div class="sec-head"><div><div class="tag">Hardware & firmware</div><h2>Tech stack</h2><p>Small, auditable building blocks. No black boxes.</p></div></div>
+    <div class="px scroll">
+      <table class="t">
+        <thead><tr><th>Component</th><th>Role</th><th>Reference</th></tr></thead>
+        <tbody>
+          <tr><td>ML-DSA-44</td><td>Post-quantum signatures for Ark & Signer</td><td><a href="https://csrc.nist.gov/pubs/fips/204/final" target="_blank" rel="noopener">NIST FIPS 204</a></td></tr>
+          <tr><td>@noble/post-quantum</td><td>Audited-style pure JS implementation, loaded in the browser</td><td><a href="https://github.com/paulmillr/noble-post-quantum" target="_blank" rel="noopener">GitHub</a></td></tr>
+          <tr><td>keccak256</td><td>Key commitments and function selectors</td><td><a href="https://ethereum.org/developers/docs/smart-contracts/" target="_blank" rel="noopener">ethereum.org</a></td></tr>
+          <tr><td>SEC 2 / NIST curves</td><td>Armed rungs: P-192, P-224, P-256, secp256k1</td><td><a href="https://www.secg.org/sec2-v2.pdf" target="_blank" rel="noopener">SEC 2 v2</a></td></tr>
+          <tr><td>Baby-step giant-step</td><td>Web Worker solver for training rungs ≤ 40 bit</td><td>Shanks, 1971</td></tr>
+          <tr><td>Serverless Functions</td><td>JSON API: status, rungs, claims, ark registry, alerts</td><td>Node.js / REST</td></tr>
+          <tr><td>Upstash Redis (optional)</td><td>Durable storage for claims and registrations</td><td><a href="https://upstash.com/docs/redis" target="_blank" rel="noopener">Upstash</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="sec" id="roadmap">
+    <div class="sec-head"><div><div class="tag">Quest log</div><h2>Roadmap</h2><p>A level only unlocks after the previous one is cleared and verified.</p></div></div>
+    <div class="grid g5">
+      <div class="px lv done"><span class="ph">LVL 1 · CLEARED</span><b>Boot</b><p>Console, API, canary ladder, Ark & Signer live.</p><div class="hp"><i style="width:100%"></i></div></div>
+      <div class="px lv"><span class="ph">LVL 2 · IN PROGRESS</span><b>Testnet</b><p>Contracts on Sepolia, wallet flows, funded training bounties.</p><div class="hp"><i style="width:45%"></i></div></div>
+      <div class="px lv"><span class="ph">LVL 3</span><b>Audit</b><p>External review of contracts and curve math.</p><div class="hp"><i style="width:0"></i></div></div>
+      <div class="px lv"><span class="ph">LVL 4</span><b>Mainnet</b><p>Deploy on Ethereum L1 and seed armed bounties.</p><div class="hp"><i style="width:0"></i></div></div>
+      <div class="px lv"><span class="ph">LVL 5 · BOSS</span><b>PQ wallets</b><p>On-chain ML-DSA verification via account abstraction.</p><div class="hp"><i style="width:0"></i></div></div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="sec" id="faq">
+    <div class="sec-head"><div><div class="tag">Help.txt</div><h2>FAQ</h2></div></div>
+    <div class="px faq">
+      <details><summary>Can AXION OS stop a quantum computer?</summary><p>No software can. AXION OS detects the capability the moment someone proves it, and triggers the protections you prepared ahead of time: frozen functions, a recovery key and alerts.</p></details>
+      <details><summary>What if an attacker never claims a bounty?</summary><p>Then the canary stays quiet. That is exactly why Ark and Guard should be set up early instead of after an alarm.</p></details>
+      <details><summary>Do my keys ever leave the browser?</summary><p>No. ML-DSA keys are generated and used in your tab. The server only ever sees a 32-byte keccak256 commitment, and the recovery kit is downloaded straight to your device.</p></details>
+      <details><summary>Why can some rungs be cracked in a browser?</summary><p>Training rungs (16–40 bit) are deliberately tiny so you can see the full flow end to end. They earn leaderboard points but never move the threat level.</p></details>
+      <details><summary>Who knows the private keys of the armed rungs?</summary><p>Nobody. Their target points are derived by hashing a public phrase onto the curve, so no one, including us, ever had the matching scalar.</p></details>
+      <details><summary>Is it live on mainnet?</summary><p>The console and API are live. Contracts are reference implementations awaiting testnet and audit; the app already builds correct calldata for them.</p></details>
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="px hl cta-box">
+      <h2>Ready before the<br>AXION Moment</h2>
+      <p>Commit a post-quantum key in under a minute. Nothing leaves your machine except a hash.</p>
+      <div class="btns"><a class="btn pri" href="/app#ark">Boot OS ▶</a><a class="btn" href="/app#contracts">Read the contracts</a></div>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="fcols">
+      <div class="fbrand">
+        <img src="/brand/logo-full.svg" alt="AXION OS">
+        <p>A pixel-world watchtower for the post-quantum era. Canaries, an oracle, and the keys to get out early.</p>
+        <div class="social" id="social2">
+          <a class="btn sm social-btn social-x" href="https://x.com/axionos_" target="_blank" rel="noopener noreferrer"><svg class="soc-ico" viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M9.333 6.927 14.542 1h-1.234L8.785 6.223 5.173 1H1l5.467 7.779L1 15h1.234l4.782-5.419L10.827 15H15l-5.667-8.073Zm-1.69 1.916-.553-.772-4.404-6.143h1.895l3.555 4.96.553.772 4.622 6.452h-1.895l-3.773-5.269Z"/></svg><span>X</span> <span class="arrow">↗</span></a>
+          <a class="btn sm social-btn social-github" href="https://github.com/AXION-OS-APP/AXION-OS" target="_blank" rel="noopener noreferrer"><svg class="soc-ico" viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8a8.01 8.01 0 0 0 5.47 7.59c.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8Z"/></svg><span>GITHUB</span> <span class="arrow">↗</span></a>
+        </div>
+      </div>
+      <div><h4>Apps</h4><ul><li><a href="/app#ark">Ark</a></li><li><a href="/app#signer">Signer</a></li><li><a href="/app#oracle">Oracle</a></li><li><a href="/app#canary">Canary</a></li></ul></div>
+      <div><h4>Build</h4><ul><li><a href="/app#guard">Guard builder</a></li><li><a href="/app#contracts">Contracts</a></li><li><a href="https://github.com/AXION-OS-APP/AXION-OS" target="_blank" rel="noopener noreferrer">GitHub</a></li><li><a href="/api/status" target="_blank">JSON API</a></li><li><a href="/app#settings">Settings</a></li></ul></div>
+      <div><h4>Site</h4><ul><li><a href="#world">World map</a></li><li><a href="#stack">Stack</a></li><li><a href="#roadmap">Roadmap</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>Research</h4><ul><li><a href="https://csrc.nist.gov/pubs/fips/204/final" target="_blank" rel="noopener">FIPS 204</a></li><li><a href="https://www.secg.org/sec2-v2.pdf" target="_blank" rel="noopener">SEC 2 curves</a></li><li><a href="https://ethereum.org/roadmap/" target="_blank" rel="noopener">Ethereum roadmap</a></li></ul></div>
+    </div>
+    <div class="legal"><div class="barcode" id="barcode"></div><span><a href="mailto:support@axionos.site">support@axionos.site</a></span><span>© <span id="yr"></span> AXION OS</span></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status"></div>
+<script type="module" src="/assets/landing.js"></script>
+</body>
+</html>
